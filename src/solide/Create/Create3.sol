@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-import "solmate/utils/CREATE3.sol";
+import "solmate/src/utils/CREATE3.sol";
 import "./Create3.sol";
 
 contract Deployer {
