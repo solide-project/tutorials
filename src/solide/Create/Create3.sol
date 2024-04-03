@@ -2,7 +2,7 @@
 pragma solidity ^0.8.24;
 
 import "solmate/src/utils/CREATE3.sol";
-import "./Create3.sol";
+import "./Ownerable.sol";
 
 contract Deployer {
     function deploy(bytes memory _salt, uint256 _value) external {
