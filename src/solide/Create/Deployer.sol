@@ -14,6 +14,15 @@ contract Deployer {
         CREATE3.deploy(keccak256(_salt), bytecode, _value);
     }
 
+    // function deploy(bytes memory _salt, bytes memory _bc, uint256 _value) external {
+    //     bytes memory bytecode = abi.encodePacked(
+    //         _bc,
+    //         abi.encode(msg.sender)
+    //     );
+
+    //     CREATE3.deploy(keccak256(_salt), bytecode, _value);
+    // }
+
     function getDeployed(bytes memory _salt) public view returns (address) {
         return CREATE3.getDeployed(keccak256(_salt));
     }
